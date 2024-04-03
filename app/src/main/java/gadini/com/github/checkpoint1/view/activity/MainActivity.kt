@@ -17,11 +17,22 @@ import gadini.com.github.checkpoint1.ui.theme.Checkpoint1Theme
 import gadini.com.github.checkpoint1.view.recyclerview.ListaOrcamentoAdapter
 import java.math.BigDecimal
 
+/**
+ * Esta classe representa a atividade principal da aplicação.
+ * A MainActivity é responsável por exibir a interface do usuário e lidar com a interação do usuário.
+ */
+
 class MainActivity : ComponentActivity() {
+    /**
+     * Método chamado quando a atividade está sendo criada.
+     *
+     * @param savedInstanceState Um objeto Bundle contendo o estado anterior da atividade.
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Encontra a RecyclerView no layout da atividade
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.adapter = ListaOrcamentoAdapter(
             context = this,
