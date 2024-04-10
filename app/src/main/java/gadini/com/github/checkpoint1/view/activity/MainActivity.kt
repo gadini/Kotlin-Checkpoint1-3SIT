@@ -25,6 +25,13 @@ import java.math.BigDecimal
 class MainActivity : ComponentActivity() {
     /**
      * Método onCreate chamado quando a atividade está sendo criada.
+     * OnCreate: Quando você cria uma nova atividade ou fragmento em um projeto do Android Studio, 
+     * o método onCreate() é gerado automaticamente para você. 
+     * Ele é responsável por realizar várias tarefas de inicialização, 
+     * como configurar a interface do usuário (por exemplo, inflar um layout), configurar variáveis, 
+     * associar objetos a elementos de interface do usuário, inicializar componentes necessários 
+     * e realizar qualquer outra configuração inicial necessária para a atividade ou fragmento 
+     * funcionar corretamente.
      *
      * @param savedInstanceState Um objeto Bundle contendo o estado anterior da atividade.
      * Bundle: arquivo que contém um conjunto de recursos, como códigos fonte, arquivos de layout, 
