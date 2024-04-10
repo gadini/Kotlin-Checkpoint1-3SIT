@@ -24,9 +24,12 @@ import java.math.BigDecimal
 
 class MainActivity : ComponentActivity() {
     /**
-     * Método chamado quando a atividade está sendo criada.
+     * Método onCreate chamado quando a atividade está sendo criada.
      *
      * @param savedInstanceState Um objeto Bundle contendo o estado anterior da atividade.
+     * Bundle: arquivo que contém um conjunto de recursos, como códigos fonte, arquivos de layout, 
+     * imagens, arquivos de configuração, etc., relacionados a um aplicativo Android. 
+     * Esses arquivos são agrupados em um pacote para facilitar a distribuição e implantação do aplicativo em dispositivos Android.
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
