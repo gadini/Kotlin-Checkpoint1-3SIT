@@ -10,7 +10,11 @@ import gadini.com.github.checkpoint1.R
 import gadini.com.github.checkpoint1.model.Orcamento
 
 /**
- * Esta classe representa um adaptador para exibir uma lista de orçamentos em uma RecyclerView.
+ * Esta classe representa um adaptador(adapter) para exibir uma lista de orçamentos em uma RecyclerView.
+ * Adapter: componente essencial usado para conectar uma fonte de dados, 
+ * como um array ou lista, a uma visualização, como um RecyclerView, ListView ou 
+ * GridView. Ele atua como um intermediário entre os dados e a interface do usuário, 
+ * permitindo que os dados sejam exibidos de forma organizada e personalizada na tela do dispositivo Android.
  */
 
 class ListaOrcamentoAdapter(
@@ -20,6 +24,8 @@ class ListaOrcamentoAdapter(
 
      /**
      * Esta classe representa um ViewHolder para exibir cada item na RecyclerView.
+     * View Holder: é um padrão de design que ajuda a melhorar o desempenho e a eficiência ao trabalhar 
+     * com listas em aplicativos Android, reduzindo a necessidade de inflar layouts repetidamente durante a rolagem.
      */
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
