@@ -44,6 +44,17 @@ class MainActivity : ComponentActivity() {
 
         // Encontra a RecyclerView no layout da atividade
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        /**
+        * findViewById() é um método utilizado em desenvolvimento de aplicativos 
+        * Android para encontrar uma view (ou elemento de interface do usuário) com base no ID fornecido. 
+        * Quando você cria layouts de interface de usuário em arquivos XML (como activity_main.xml), 
+        * cada view dentro desse layout pode ter um ID associado a ele. 
+        * Este ID é usado para identificar exclusivamente essa view dentro do layout.
+        * O método findViewById() é chamado em uma instância de View, como uma Activity ou um Fragment, 
+        * e retorna a view correspondente ao ID fornecido. 
+        * A view retornada é do tipo View, então geralmente é necessário fazer um cast para
+        * o tipo específico da view que você está procurando, como TextView, Button, ImageView, etc.
+        */
         recyclerView.adapter = ListaOrcamentoAdapter(
             context = this,
             orcamentos = listOf(
